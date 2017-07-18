@@ -1,0 +1,24 @@
+#What variables you are allowed to use where
+a = 7823
+
+def corn():
+    print(a)
+
+def fudge():
+    print(a)
+
+corn()
+fudge()
+
+#the first rule of what variables your functions are allowed to use, if the variable is created outside the function and above it, your function can access that variable, to prevent unresolved references
+
+#only the function that created the variable can access that variable
+'''
+b = 12345
+def cat()
+print(b)
+
+def duck()
+print(b)
+'''
+#duck would not be able to properly reference variable b, because it is nested inside the function of cat
